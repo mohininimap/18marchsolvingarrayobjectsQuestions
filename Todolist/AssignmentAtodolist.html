@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .main{
+            background: #ED7F80;
+            height: 300px;
+            padding: 10px;
+        }
+        .inp1c{
+            width:300px;
+            height: 40px;
+            color: #ED7F80;
+            font-size: 20px;
+
+        }
+        .inp1c::placeholder{
+            color: #ED7F80;
+        }
+        .btns{
+            width:130px;
+            height: 35px;
+            background: white;
+            color: #ED7F80;
+            border-radius: 5px;
+            border: none;
+            margin: 10px;
+        }
+        .head1{
+            color:white;
+        }
+        .ineerlist1{
+            color:white; 
+            font-size: 20px;
+        }
+        #display{
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div><input class="inp1c" type="text" id="inp1" placeholder="Enter your data">
+            <input  class="btns" type="button" id="addbtn" onclick="addData();" value="ADD">
+            <input class="btns" type="button" onclick="doneList('addbtn')" value="DONE" >
+            <input class="btns" type="button" onclick="clearAllList()"  value="NEW-LIST">
+            </div>
+            <div id="display">
+                <h1 class="head1">YOUR ADDED DATA</h1>
+                <div class="ineerlist1" id="displaylist"></div>
+            </div>
+    </div>
+    
+<script type="text/javascript" src="AssignmentAtodolist.js"></script>    
+</body>
+</html>
